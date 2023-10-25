@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sunil Bohara">
+    <meta name="description" content="developer, Sunil, web, Front-end">
+    <title>Sunil Bohara</title>
+
+    <!-- Loading style sheet  -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Loading icons -->
+    <script src="https://kit.fontawesome.com/585068da10.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/585068da10.js" crossorigin="anonymous"></script>
+
+    <!-- Loading javascript -->
+    <!-- <script src="./index.js" defer></script> -->
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="./Images/logo-6.png" alt="logo", class="logo"> -->
+                <h1 class="logo">Sunil B.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Sevices</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="header-box">
+                    <p>Front-end developer</p>
+                    <h1>Hii, I am <span>Sunil Bohara</span><br>from India</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/sunil-bohara-img.png" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate front-end developer with technologies like HTML, CSS, JavaScript, Tailwind CSS,
+                        etc. I have created multiple responsive web pages and websites for my projects and
+                        certifications. I can create beautiful web pages with responsive designs so your website looks
+                        beautiful on all kinds of devices.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-end web development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - Current</span><br> Front-end development</li>
+                            <li><span>2023 - Current</span><br> UI/UX Design</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2020 (School)</span><br>D.A.V School</li>
+                            <li><span>2020 - 2021 (College - drop out)</span><br>C.G.C Jhanjeri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end development</h2>
+                    <p>I am a passionate front-end developer with technologies like HTML, CSS, JavaScript, Tailwind CSS,
+                        etc. I have created multiple responsive web pages and websites for my projects and
+                        certifications. I can create beautiful web pages with responsive designs so your website looks
+                        beautiful on all kinds of devices.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I have a very strong interest in UI/UX design. I am currently learning UI/UX designing and tools like Figma to be able to create beautiful web and app interfaces.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo quis eaque illum
+                        magnam minima ipsum error nemo maxime fugiat.</p>
+                    <a href="#">Learn More</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Images/work-1.png" alt="img">
+                    <div class="layer">
+                        <h3>Amazon clone</h3>
+                        <p>I have created an Amazon website clone with technologies like HTML, CSS and JavaScript. With responsive design it looks beautiful in mobile device aslo. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work-2.png" alt="img">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors game</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iure consectetur, fuga tempora
+                            consequatur reprehenderit!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="./Images/work-3.png" alt="img">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iure consectetur, fuga tempora
+                            consequatur reprehenderit!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-title contact-sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sunilbohara2142060@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+918307606436</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/sunil21460" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/sunil-bohara-897b34228/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sunil-Bohara" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./Images/my-cv.pdf" download class="download-btn btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required class="inputs">
+                        <input type="email" name="Email" placeholder="Your email" class="inputs">
+                        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Write your message here"
+                            class="text-area"></textarea>
+                        <button type="submit" class="btn submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright &copy; Sunil Bohara 2023</p>
+    </footer>
+    <script>
+        // All the variables
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+        let submitButton = document.querySelector(".submit-btn");
+        let inputsField = document.querySelectorAll(".inputs");
+        let textArea = document.querySelector(".text-area");
+
+        // Script for hambuger menu
+        function opentab(tabname) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+
+        let sideMenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sideMenu.style.right = "0";
+        }
+        function closemenu() {
+            sideMenu.style.right = "-200px";
+        }
+
+        // Script for submit button
+        submitButton.addEventListener("click", () => {
+            inputsField.forEach((input) => {
+                input.value = "";
+            })
+            textArea.value = "";
+            alert("Your message sent successfully. Thank you.");
+        })
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzW4ua2_hfs24XrQR1QN4N4fXdi_U3-_wjaHp86h7ADkhsVv306_CogoZNfIgVsBt0Apw/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
